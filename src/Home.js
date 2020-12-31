@@ -60,7 +60,6 @@ class MovieFinder extends React.Component {
         throw new Error(data.Error);
       }
       if (data.Response === 'True' && data.Search) {
-        console.log(data);
         this.setState({ results: data.Search, error: '' });
       }
     })
